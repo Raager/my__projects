@@ -1,0 +1,13 @@
+FROM php:8.0.2-apache
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    zip \
+    vim \
+    unzip
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+LABEL Name=todo Version=0.0.1
+WORKDIR /var/www
+COPY . /var/www
+EXPOSE 80

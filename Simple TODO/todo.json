@@ -1,0 +1,14 @@
+{
+    "get a new job": {
+        "completed": true
+    },
+    "go poo": {
+        "completed": false
+    },
+    "buy a monitor": {
+        "completed": false
+    },
+    "go eat": {
+        "completed": true
+    }
+}
