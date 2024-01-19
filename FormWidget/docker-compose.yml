@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  crud:
+    image: formwidget
+    container_name: formwidget
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:80
+    restart: always
+    volumes:
+      - ./:/var/www/html
+
+
+
